@@ -1,11 +1,12 @@
-# TestingServerForAPNsFeedBack
+# TestingServerForAPNs
 
-A TCP server for testing the APNS Push service
+A TCP server for testing the APNS service
 
 ## Sample usage
 
 ```shell
-./test-server -c apns-dev-cert.pem -k apns-dev.pem
+./test-pushserver -c apns-dev-cert.pem -k apns-dev.pem
+./test-feedback -c apns-dev-cert.pem -k apns-dev.pem
 ```
 
 Client must use the same cert or key file as server end.
